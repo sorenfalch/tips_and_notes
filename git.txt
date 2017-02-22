@@ -1,0 +1,20 @@
+### git pull and overwrite local changes (master branch):
+> git fetch --all
+> git reset --hard origin/master
+
+
+### Stage deletion of file or directory, but don't remove local file
+> git rm --cached -r somedir
+> git rm --cached -r somefile.ex
+
+
+### Merge one branch (eg. dev/feature) into another (e.g. master):
+
+# merge master into the development first so that if there are any conflicts,
+# they can be resolved in the development branch itself and master remains clean.
+
+# (on branch development)$
+> git merge master            # (resolve any merge conflicts if there are any)
+
+> git checkout master
+> git merge development       # (there won't be any conflicts now)
