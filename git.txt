@@ -7,6 +7,9 @@
 > git rm --cached -r somedir
 > git rm --cached -r somefile.ex
 
+### Force case insensitivity when rebasing:
+> git -c core.ignorecase=true rebase miljoeOgFastholdelse
+
 
 ### Merge one branch (eg. dev/feature) into another (e.g. master):
 
@@ -18,3 +21,7 @@
 
 > git checkout master
 > git merge development       # (there won't be any conflicts now)
+
+### Get SHA of last commit:
+`git log -1 --pretty=%h`
+eg.
