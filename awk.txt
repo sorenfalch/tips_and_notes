@@ -1,0 +1,2 @@
+### Sum values of columns number 7
+awk```awk '{s+=$7} END {print s}'```
