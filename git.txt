@@ -10,6 +10,22 @@
 ### Force case insensitivity when rebasing:
 > git -c core.ignorecase=true rebase miljoeOgFastholdelse
 
+### View unpushed commits
+
+```
+git log origin/<branch>..HEAD
+```
+
+```
+git diff origin/<branch>..HEAD
+```
+
+
+### Roll back one commit 
+```
+git reset HEAD~
+```
+
 
 ### Merge one branch (eg. dev/feature) into another (e.g. master):
 
